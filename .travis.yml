@@ -11,10 +11,13 @@ compiler:
 script:
   - make
   - make reset
-  - make biorobots-sample:
-  - make cancer-biorobots-sample:
-  - make cancer-immune-sample:
-  - make virus-macrophage-sample:
+  - make biorobots-sample
+  - make reset
+  - make cancer-biorobots-sample
+  - make reset
+  - make cancer-immune-sample
+  - make reset
+  - make virus-macrophage-sample
 
 notifications:
   email:
