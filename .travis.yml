@@ -10,6 +10,11 @@ compiler:
 # Build steps
 script:
   - make
+  - make reset
+  - make biorobots-sample:
+  - make cancer-biorobots-sample:
+  - make cancer-immune-sample:
+  - make virus-macrophage-sample:
 
 notifications:
   email:
