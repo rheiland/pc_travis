@@ -3,9 +3,11 @@ language: cpp
 
 os: linux
 
+dist: trusty
+
 # Compiler selection
 compiler:
-  - g++-10
+  - g++
 
 # Build steps
 script:
