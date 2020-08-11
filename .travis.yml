@@ -5,7 +5,7 @@ os: linux
 
 # Compiler selection
 compiler:
-  - g++
+  - g++-10
 
 # Build steps
 script:
