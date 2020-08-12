@@ -48,6 +48,18 @@ cache:
     - $HOME/AppData/Local/Temp/chocolatey
     - /C/tools/msys64
 
+- g++ --version
+- $shell $GNU_MAKE --version
+
+install:
+# - export BOOST_DIR=$PWD/boost
+# - export GTEST_DIR=$PWD/googletest
+# - export HUNSPELL_DIR=$PWD/hunspell
+# - export CRYPTOPP_DIR=$PWD/cryptopp
+# - export OPENSSL_DIR=$PWD/openssl
+# - $GIT config --global --add submodule.fetchJobs `nproc`
+# - export MAKEFLAGS="-s -j `nproc`"
+- $shell ./prepare_deps
 
 # Build steps
 script:
