@@ -4,6 +4,7 @@ language: cpp
 
 os: windows
 
+# rf. https://github.com/tanzislam/cryptopals/blob/master/.travis.yml#L134-L146
 before_install:
 - |-
     case $TRAVIS_OS_NAME in
@@ -50,7 +51,8 @@ cache:
 
 # Build steps
 script:
-  - make biorobots-sample
+  - $GNU_MAKE
+#  - make biorobots-sample
 
 notifications:
   email:
